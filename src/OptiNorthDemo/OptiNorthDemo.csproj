@@ -19,6 +19,7 @@
     <PackageReference Include="Geta.Optimizely.Categories.Find" Version="1.0.0" />
     <PackageReference Include="Geta.Optimizely.ContentTypeIcons" Version="2.0.2" />
     <PackageReference Include="Stott.Optimizely.RobotsHandler" Version="2.5.0" />
+    <PackageReference Include="Stott.Security.Optimizely" Version="0.8.0-beta" />
   </ItemGroup>
   
   <ItemGroup>

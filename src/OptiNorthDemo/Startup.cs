@@ -41,7 +41,8 @@ public class Startup
         services.AddCustomDependencies()
                 .AddGetaCategories()
                 .AddGetaContentTypeIcons(_webHostingEnvironment)
-                .AddRobotsTextHandler();
+                .AddRobotsTextHandler()
+                .AddSecurityAdmin();
     }
 
     public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -59,6 +60,7 @@ public class Startup
         app.UseRouting();
         app.UseAuthentication();
         app.UseAuthorization();
+        app.UseSecurityAdmin();
 
         app.UseGetaCategories();
         app.UseGetaCategoriesFind();
