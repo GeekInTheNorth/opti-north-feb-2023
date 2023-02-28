@@ -1,6 +1,6 @@
 ﻿namespace OptiNorthDemo.Features.Pages.Home;
 
-using OptiNorthDemo.Features.Common.Pages;
+using OptiNorthDemo.Core.Pages;
 
 public class HomePageViewModelBuilder : SitePageViewModelBuilder<HomePage, HomePageViewModel>, IHomePageViewModelBuilder
 {

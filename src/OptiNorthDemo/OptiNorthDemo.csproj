@@ -27,6 +27,7 @@
   </ItemGroup>
   
   <ItemGroup>
-    <Folder Include="Features\Pages\Home\" />
+    <ProjectReference Include="..\OptiNorthDemo.Core\OptiNorthDemo.Core.csproj" />
   </ItemGroup>
+
 </Project>

@@ -7,7 +7,7 @@ using EPiServer.DataAnnotations;
 using EPiServer.Framework.DataAnnotations;
 using EPiServer.Web;
 
-using OptiNorthDemo.Features.Common;
+using OptiNorthDemo.Core;
 
 [ContentType(
     DisplayName = "Video Content",

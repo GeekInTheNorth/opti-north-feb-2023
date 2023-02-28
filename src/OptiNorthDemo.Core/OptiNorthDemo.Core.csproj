@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="modules\**" />
+    <EmbeddedResource Remove="modules\**" />
+    <None Remove="modules\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="$(UserProfile)\.nuget\packages\**\*.zip" />
+    <None Remove="$(UserProfile)\.nuget\packages\**\*.config" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EPiServer.CMS" Version="12.13.2" />
+    <PackageReference Include="Geta.Optimizely.Categories" Version="1.0.0" />
+  </ItemGroup>
+
+</Project>

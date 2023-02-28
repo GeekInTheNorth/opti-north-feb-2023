@@ -9,6 +9,8 @@ using EPiServer.DataAnnotations;
 using Geta.Optimizely.ContentTypeIcons;
 using Geta.Optimizely.ContentTypeIcons.Attributes;
 
+using OptiNorthDemo.Core.Blocks;
+
 [ContentType(
     DisplayName = "Rich Text Block",
     GUID = "ad51630a-45a9-40d6-ba24-1817e7c3cdd7",

@@ -8,9 +8,9 @@ using EPiServer.DataAnnotations;
 using Geta.Optimizely.ContentTypeIcons;
 using Geta.Optimizely.ContentTypeIcons.Attributes;
 
-using OptiNorthDemo.Features.Blocks;
-using OptiNorthDemo.Features.Common;
-using OptiNorthDemo.Features.Common.Pages;
+using OptiNorthDemo.Core;
+using OptiNorthDemo.Core.Blocks;
+using OptiNorthDemo.Core.Pages;
 
 [ContentType(
     DisplayName = "General Content Page",

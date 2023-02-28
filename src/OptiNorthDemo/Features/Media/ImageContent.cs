@@ -3,11 +3,10 @@
 using System.ComponentModel.DataAnnotations;
 
 using EPiServer.Core;
-using EPiServer.DataAbstraction;
 using EPiServer.DataAnnotations;
 using EPiServer.Framework.DataAnnotations;
 
-using OptiNorthDemo.Features.Common;
+using OptiNorthDemo.Core;
 
 [ContentType(
     DisplayName = "Image Content",

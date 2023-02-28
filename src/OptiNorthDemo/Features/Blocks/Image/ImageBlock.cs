@@ -10,7 +10,8 @@ using EPiServer.Web;
 using Geta.Optimizely.ContentTypeIcons;
 using Geta.Optimizely.ContentTypeIcons.Attributes;
 
-using OptiNorthDemo.Features.Common;
+using OptiNorthDemo.Core;
+using OptiNorthDemo.Core.Blocks;
 
 [ContentType(
     DisplayName = "Image Block",

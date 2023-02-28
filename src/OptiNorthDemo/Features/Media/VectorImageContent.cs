@@ -6,7 +6,7 @@ using EPiServer.Core;
 using EPiServer.DataAnnotations;
 using EPiServer.Framework.DataAnnotations;
 
-using OptiNorthDemo.Features.Common;
+using OptiNorthDemo.Core;
 
 [ContentType(
     DisplayName = "Vector Image Content",

@@ -1,6 +1,6 @@
 ﻿namespace OptiNorthDemo.Features.Pages.GeneralContent;
 
-using OptiNorthDemo.Features.Common.Pages;
+using OptiNorthDemo.Core.Pages;
 
 public class GeneralContentPageViewModel : SitePageViewModel<GeneralContentPage>
 {
