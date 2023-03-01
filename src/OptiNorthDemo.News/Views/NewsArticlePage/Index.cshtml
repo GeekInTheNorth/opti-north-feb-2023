@@ -7,6 +7,10 @@
     <span>Published: @Model.CurrentPage.DisplayPublishedDate.Value.ToString("dd MMM yyy")</span>
 }
 
+<div class="container">
+
 @Html.PropertyFor(x => x.CurrentPage.ArticleContent)
 
 @Html.PropertyFor(x => x.CurrentPage.AdditionalContent)
+
+</div>
