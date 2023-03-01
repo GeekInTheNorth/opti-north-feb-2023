@@ -2,6 +2,10 @@
 @model OptiNorthDemo.News.Article.NewsArticlePageViewModel
 
 <h1>@Html.PropertyFor(x => x.CurrentPage.Heading)</h1>
+@if (Model.CurrentPage.DisplayPublishedDate.HasValue)
+{
+    <span>Published: @Model.CurrentPage.DisplayPublishedDate.Value.ToString("dd MMM yyy")</span>
+}
 
 @Html.PropertyFor(x => x.CurrentPage.ArticleContent)
 

@@ -14,21 +14,27 @@ using OptiNorthDemo.Core.Pages;
     Description = "A flexible news article page.",
     GUID = "DADC30C2-7F68-45F3-B279-FD4446B9B3CA",
     GroupName = GroupNames.Content)]
-public partial class NewsArticlePage : SitePageData
+public class NewsArticlePage : SitePageData
 {
     [Display(
-        Name = "Main Content",
+        Name = "Display Published Date",
+        GroupName = GroupNames.Content,
+        Order = 100)]
+    public virtual DateTime? DisplayPublishedDate { get; set; }
+
+    [Display(
+        Name = "Article Content",
         Description = "A content area that allows blocks that have been specifically designed as content.",
         GroupName = GroupNames.Content,
-        Order = 10)]
+        Order = 110)]
     [AllowedTypes(typeof(IContentBlock))]
     public virtual ContentArea? ArticleContent { get; set; }
 
     [Display(
-        Name = "Main Content",
+        Name = "Additional Content",
         Description = "A content area that allows blocks that have been specifically designed as content.",
         GroupName = GroupNames.Content,
-        Order = 10)]
+        Order = 120)]
     [AllowedTypes(typeof(IContentBlock))]
     public virtual ContentArea? AdditionalContent { get; set; }
 }
