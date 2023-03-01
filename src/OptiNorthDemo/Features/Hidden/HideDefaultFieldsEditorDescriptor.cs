@@ -34,8 +34,9 @@
         {
             var hiddenFields = new List<Tuple<string, string>>
             {
-                new("NewsArticlePage", "AdditionalContent"),
-                new("NewsArticlePage", "DisplayPublishedDate")
+                new("NotAPage", "NotAProperty"),
+                // new("NewsArticlePage", "AdditionalContent"),
+                // new("NewsArticlePage", "DisplayPublishedDate")
             };
 
             return hiddenFields.Any(x =>
