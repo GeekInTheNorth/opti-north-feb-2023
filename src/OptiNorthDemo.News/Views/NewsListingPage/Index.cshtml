@@ -1,0 +1,18 @@
+@using EPiServer.Web.Mvc.Html;
+@model OptiNorthDemo.News.Listing.NewsListingPageViewModel
+
+<h1>@Html.PropertyFor(x => x.CurrentPage.Heading)</h1>
+
+@if (Model.Articles.Any())
+{
+    <div>
+        <ul>
+        @foreach (var article in Model.Articles)
+        {
+            <li><a href="@Url.ContentUrl(article.ContentLink)" title="@article.Heading">@article.Heading</a></li>
+        }
+        </ul>
+    </div>
+}
+
+@Html.PropertyFor(x => x.CurrentPage.AdditionalContent)
